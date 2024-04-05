@@ -1,14 +1,11 @@
-// generate string based on system date
-export const getSystemDate = () => {
-  const date = new Date();
-  return new Date(Number(date)).toLocaleString();
-};
+export function formatNumberWithTwoDecimals(numberString: string): string {
+  const number = parseFloat(numberString);
 
-// return number count
-export const GetTitleNotificationTab = (count?: string) => {
-  if (!count) {
-    return;
+  if (isNaN(number)) {
+    return numberString;
   }
-  const returnCount = Number(count) > 5 ? '5+' : count;
-  return `${returnCount}`;
-};
+
+  const formattedNumber = number.toFixed(2);
+
+  return formattedNumber;
+}

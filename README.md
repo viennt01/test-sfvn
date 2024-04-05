@@ -10,4 +10,4 @@ yarn dev
 pnpm dev
 ```
 
-Open [https://capstion-project.vercel.app/](https://capstion-project.vercel.app/) with your browser to see the result.
+Open [https://test-sfvn.vercel.app/](https://test-sfvn.vercel.app/) with your browser to see the result.
